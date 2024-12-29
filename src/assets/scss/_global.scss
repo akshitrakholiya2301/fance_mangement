@@ -1,0 +1,868 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: $text_color;
+    font-weight: 400;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Common CSS Start                              */
+/* -------------------------------------------------------------------------- */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700
+}
+
+b {
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%
+}
+
+a,
+a:hover {
+    text-decoration: none
+}
+
+p:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Common CSS End                               */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                              Message CSS Start                             */
+/* -------------------------------------------------------------------------- */
+.error-msg {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: $danger_color;
+    font-weight: 500;
+}
+
+.success-msg {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: $success_color;
+    font-weight: 500;
+}
+
+.file-name {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: $primary_color;
+    font-weight: 500;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.note-msg {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: $text_color;
+    font-weight: 500;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Message CSS End                              */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                               Font Size Start                              */
+/* -------------------------------------------------------------------------- */
+.fs-10 {
+    font-size: 10px !important
+}
+
+.fs-11 {
+    font-size: 11px !important
+}
+
+.fs-12 {
+    font-size: 12px !important
+}
+
+.fs-13 {
+    font-size: 13px !important
+}
+
+.fs-14 {
+    font-size: 14px !important
+}
+
+.fs-15 {
+    font-size: 15px !important
+}
+
+.fs-16 {
+    font-size: 16px !important
+}
+
+.fs-17 {
+    font-size: 17px !important
+}
+
+.fs-18 {
+    font-size: 18px !important
+}
+
+.fs-19 {
+    font-size: 19px !important
+}
+
+.fs-20 {
+    font-size: 20px !important
+}
+
+.fs-21 {
+    font-size: 21px !important
+}
+
+.fs-22 {
+    font-size: 22px !important
+}
+
+.fs-23 {
+    font-size: 23px !important
+}
+
+.fs-24 {
+    font-size: 24px !important
+}
+
+.fs-26 {
+    font-size: 26px !important
+}
+
+.fs-28 {
+    font-size: 28px !important
+}
+
+.fs-30 {
+    font-size: 30px !important
+}
+
+.fs-36 {
+    font-size: 36px !important
+}
+
+.fs-42 {
+    font-size: 42px !important
+}
+
+.fs-48 {
+    font-size: 48px !important
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Font Size End                               */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                              Font Weight Start                             */
+/* -------------------------------------------------------------------------- */
+.fw-400 {
+    font-weight: 400 !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fw-700 {
+    font-weight: 700 !important;
+}
+
+.fw-800 {
+    font-weight: 800 !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Font Weight End                              */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                               Icon Size Start                              */
+/* -------------------------------------------------------------------------- */
+.icon-xs {
+    height: 16px;
+    width: 16px
+}
+
+.icon-sm {
+    height: 18px;
+    width: 18px
+}
+
+.icon-md {
+    height: 22px;
+    width: 22px
+}
+
+.icon-lg {
+    height: 24px;
+    width: 24px
+}
+
+.icon-xl {
+    height: 28px;
+    width: 28px
+}
+
+.icon-xxl {
+    height: 32px;
+    width: 32px
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Icon Size End                               */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                 Width Start                                */
+/* -------------------------------------------------------------------------- */
+.w-xs {
+    min-width: 80px
+}
+
+.w-sm {
+    min-width: 95px
+}
+
+.w-md {
+    min-width: 110px
+}
+
+.w-lg {
+    min-width: 140px
+}
+
+.w-xl {
+    min-width: 160px
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Width End                                 */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                           File Information Start                           */
+/* -------------------------------------------------------------------------- */
+.file-information {
+    padding: 4px 10px;
+    border-radius: 40px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: capitalize;
+    width: fit-content;
+    block-size: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: #EAECEF;
+    color: $text_color;
+    margin-top: 5px;
+
+    i {
+        margin-right: 4px;
+        -webkit-text-stroke: 0.4px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            File Information End                            */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                            Group Container Start                           */
+/* -------------------------------------------------------------------------- */
+// Group Container 
+.group-container {
+    margin-bottom: 16px;
+
+    .group-title {
+        margin-bottom: 8px;
+
+        h5 {
+            color: $black_color;
+            margin-bottom: 0px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        h6 {
+            color: $black_color;
+            margin-bottom: 0px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+
+    .group-description {
+        color: $text_color;
+
+        p {
+            font-size: 13px;
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             Group Container End                            */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                Profile Start                               */
+/* -------------------------------------------------------------------------- */
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .profile-image {
+        margin-right: 20px;
+        height: 120px;
+        width: 120px;
+        overflow: hidden;
+        border-radius: 16px;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .profile-content {
+        width: calc(100% - 140px);
+
+        h6 {
+            color: #1A1D1F;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Profile End                                */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                       Attachments - File Upload Start                      */
+/* -------------------------------------------------------------------------- */
+.attachments-container {
+    position: relative;
+    border: 2px dashed #E6EAEE;
+    padding: 15px 25px;
+    min-height: 100px;
+    border-radius: 8px;
+
+    .attachments-content {
+        text-align: center;
+
+        .btn-attachments {
+            background-color: #E9F1FE;
+            border: 1px solid #E9F1FE;
+            color: #000000;
+            height: 37px;
+            width: 37px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+    }
+
+    input[type="file"] {
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    &:hover {
+        background-color: #F2F6FF;
+        border-color: $primary_color;
+
+        .btn-attachments {
+            background-color: $white_color;
+            border-color: $white_color;
+            color: #000;
+        }
+
+        p {
+            color: $black_color;
+        }
+    }
+}
+
+.attachments-upload-grid-container {
+    margin-top: 15px;
+
+    .attachments-upload-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 -8px;
+        row-gap: 14px;
+
+        .attachments-upload-col {
+
+            padding: 0 8px;
+        }
+
+        .card-attachments-upload {
+            border: 1px solid #E6EAEE;
+            border-radius: 7px;
+            overflow: hidden;
+            position: relative;
+
+            .attachments-image {
+                height: 100px;
+                width: 100px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .attachments-body {
+                padding: 10px;
+
+                h6 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $black_color;
+                    margin-bottom: 3px;
+                }
+
+                p {
+                    font-size: 12px;
+                    color: $text_color;
+                }
+            }
+
+            &.attachments-file {
+                .attachments-image {
+                    background-color: #F2F6FF;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+            }
+
+            .btn-close {
+                background: 0;
+                font-size: 12px;
+                color: $text_color;
+                opacity: 1;
+                box-shadow: none;
+                border: 0;
+                padding: 0;
+                height: 16px;
+                width: 16px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+
+                i {
+                    transition: 0.70s;
+                    -webkit-text-stroke: 0.5px;
+                }
+
+                &:hover {
+                    background-color: #F4F5F6;
+                    color: $black_color;
+
+                    i {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                        Attachments - File Upload End                       */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                         Textbox - File Upload Start                        */
+/* -------------------------------------------------------------------------- */
+.form-group-inner-file-upload {
+    background-color: #FFFFFF;
+    border: 1px solid #E6EAEE;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 4px 16px;
+    border-radius: 5px;
+
+    .inner-file-upload-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .inner-file-upload-right {
+        p {
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Textbox - File Upload End                         */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                             Avatar Group Start                             */
+/* -------------------------------------------------------------------------- */
+.avatar-group-container {
+    display: flex;
+    align-items: center;
+
+    .avatar-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 10px;
+
+        .avatar-group-item {
+            height: 26px;
+            width: 26px;
+            border-radius: 50%;
+            border: 2px solid $white_color;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+            margin-left: -10px;
+            display: inline-flex;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        .avatar-group-count {
+            height: 26px;
+            width: 26px;
+            border-radius: 50%;
+            border: 2px solid $white_color;
+            margin-left: -10px;
+            background-color: #292D32;
+            color: $white_color;
+            font-size: 10px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+
+    .btn-icon {
+        margin-left: 25px;
+        color: $text_color;
+    }
+
+    .avatar-team-name {
+        margin-right: 8px;
+        font-size: 14px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Avatar Group End                              */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                           Grid - List View Start                           */
+/* -------------------------------------------------------------------------- */
+.grid-list-view {
+    ul {
+        @include reset-list;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #E6EAEE;
+        border-radius: 7px;
+
+        li {
+            cursor: pointer;
+            height: 36px;
+            width: 36px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            border-right: 1px solid #E6EAEE;
+
+
+            &.active {
+                color: $primary_color;
+            }
+
+            &:nth-last-child(1) {
+                border-right: 0;
+            }
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            Grid - List View End                            */
+/* -------------------------------------------------------------------------- */
+
+
+
+
+.layout-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9fafc;
+    padding: 10px;
+    padding-left: 0px;
+
+
+    #page-topbar {
+        top: 10px;
+    }
+}
+
+
+.main-content {
+    min-height: calc(100vh - 80px);
+
+    .page-content {
+        margin-top: 60px;
+        min-height: calc(100vh - 80px);
+        padding: 0;
+
+        .page-content-wrapper {
+            height: 100%;
+            background-color: $white_color;
+            border: 1px solid $gray_color;
+            border-top: 0px;
+            padding: 0px;
+            min-height: calc(100vh - 80px);
+            border-bottom-left-radius: 13px;
+            border-bottom-right-radius: 13px;
+
+
+            .not-found-page {
+                height: calc(100vh - 100px);
+            }
+        }
+
+        .page-content-inner-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .page-content-inner-left,
+            .page-content-inner-right {
+                display: flex;
+                align-items: center;
+                gap: 0 10px;
+            }
+        }
+
+
+        .page-filter {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .nav-tabs-outer {
+                &.nav-tabs-style1 {
+                    .nav-tabs {
+                        flex-wrap: nowrap;
+                    }
+                }
+            }
+
+            .page-filter-left,
+            .page-filter-right {
+                display: flex;
+                align-items: center;
+                gap: 0 10px;
+            }
+
+            .form-group {
+                width: 100%;
+                min-width: 120px;
+                max-width: 130px;
+
+                .form-control {
+                    width: 100%;
+                }
+            }
+
+            .page-filter-form-group {
+                display: flex;
+                align-items: center;
+                gap: 0 10px;
+
+            }
+        }
+    }
+}
+
+
+
+/* -------------------------------- Not Found ------------------------------- */
+.not-found-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .not-found-page-image {
+        width: 439px;
+        height: auto;
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .not-found-page-text {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 36.4px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: $black_color;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27.2px;
+            text-align: center;
+            color: $text_color;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            margin: 0 auto;
+        }
+    }
+}
+
+
+/* -------------------------------- Not Found ------------------------------- */
+
+
+/* ---------------------------- contetpage height --------------------------- */
+.contetnt-h80 {
+    height: calc(100vh - 81px) !important;
+    overflow-y: auto;
+}
+
+.contetnt-h180 {
+    height: calc(100vh - 180px) !important;
+    overflow-y: auto;
+}
+
+/* ---------------------------- contetpage height --------------------------- */
+
+
+/* ----------------------------- Not Found Card ----------------------------- */
+.not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 0px;
+
+    .not-found-image {
+        width: 146px;
+        height: 146px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .not-found-text {
+        p {
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 19.2px;
+            text-align: center;
+            margin-bottom: 0px;
+            color: $text_color;
+        }
+    }
+}
+
+/* ----------------------------- Not Found Card ----------------------------- */

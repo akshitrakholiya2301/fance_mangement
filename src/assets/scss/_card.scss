@@ -1,0 +1,198 @@
+.card {
+    background-color: $white_color;
+    border: 1px solid #E6EAEE;
+    box-shadow: 0px 55px 110px 0px #00000005;
+    border-radius: 12px;
+
+    .card-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0px;
+        margin: 0 15px;
+        border-bottom: 1px solid $gray_color;
+
+        .card-title-right,
+        .card-title-left {
+            display: flex;
+            align-items: center;
+            gap: 0 10px;
+        }
+
+
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20.8px;
+            text-align: left;
+            color: $black_color;
+            margin-bottom: 0px;
+
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 23.8px;
+                color: $text_color;
+            }
+        }
+
+
+        .form-group {
+            label {
+                font-size: 12px !important;
+                font-weight: 500 !important;
+                line-height: 18px !important;
+            }
+
+            .form-select {
+                padding: 2px 30px 2px 16px !important;
+                line-height: 18px !important;
+                font-size: 12px !important;
+                color: $primary_color;
+            }
+        }
+    }
+
+
+    .card-title2 {
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20.8px;
+            text-align: left;
+            color: $primary_color;
+            margin-bottom: 0px;
+            position: relative;
+
+            span {
+                background-color: $white_color;
+                padding-right: 10px;
+                position: relative;
+                z-index: 1;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 1px;
+                background-color: #C7C7C7;
+                width: 100%;
+            }
+
+        }
+    }
+
+    .card-body {
+        padding: 15px;
+
+    }
+
+    .card-footer {
+        padding: 10px 24px 24px;
+        display: inline-flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+
+    &.card-style2 {
+        background-color: #F9FAFC;
+        border: 1px solid #E6EAEE;
+
+        .card-title {
+            border-bottom: 1px solid #E6EAEE;
+        }
+    }
+
+    &.bg-warning {
+        background-color: #FFF6E8 !important;
+        border-color: #FFF6E8;
+    }
+}
+
+
+
+.card-no-records {
+    background-color: $white_color;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card-body {
+        padding: 0px;
+        text-align: center;
+
+        .card-no-records-img {
+            margin-bottom: 25px;
+
+            img {
+                height: 170px;
+            }
+        }
+
+        .card-no-records-content {
+            h5 {
+                font-size: 24px;
+                font-weight: 600;
+                color: $black_color;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .card-no-records-button {
+            margin-top: 25px;
+
+            .button-group {
+                justify-content: center;
+            }
+        }
+    }
+
+    &.card-no-records-sm {
+        min-height: auto;
+
+        .card-no-records-img {
+            margin-bottom: 10px;
+
+            img {
+                height: 65px;
+            }
+        }
+
+        .card-no-records-content {
+            h5 {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 0 10px;
+
+    i {
+        font-size: 24px;
+        line-height: 24px;
+        color: $warning_color;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 23.8px;
+        text-align: left;
+        margin-bottom: 0px;
+        color: $black_color;
+    }
+}

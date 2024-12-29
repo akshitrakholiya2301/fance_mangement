@@ -1,0 +1,64 @@
+.offcanvas {
+    .offcanvas-header {
+        border-bottom: 1px solid #E6EAEE;
+    }
+}
+
+
+
+.edit-style-canavs {
+    &.offcanvas-end {
+        width: 400px;
+        height: calc(100vh - 90px);
+        top: 80px;
+        right: 10px;
+        border-radius: 10px;
+        border: 1px solid #E6EAEE;
+        transition: all 0.5s;
+
+        &.canvas-expand {
+            width: calc(100vw - 320px);
+        }
+    }
+
+    .offcanvas-header {
+        .offcanvas-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .edit-style-title-right,
+        .edit-style-title-left {
+            display: flex;
+            align-items: center;
+            gap: 0 10px;
+        }
+
+        .color {
+            width: 24px;
+            height: 24px;
+            border-radius: 5px;
+            background-color: $primary_color;
+
+        }
+
+        h2 {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17.81px;
+            text-align: left;
+            color: $black_color;
+            margin-bottom: 0px;
+        }
+    }
+
+    .edit-style-canavs-footer {
+        width: 100%;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid $gray_color;
+    }
+}

@@ -1,0 +1,70 @@
+.membership {
+    margin-bottom: 40px;
+}
+
+.card-radio {
+    display: flex;
+    align-items: center;
+    gap: 0 14px;
+    background-color: $white_color;
+    border: 1px solid $gray_color;
+    padding: 10px 12px;
+    border-radius: 8px;
+
+    .card-radio-input {
+        .radio {
+
+            margin: 0;
+            display: flex;
+            align-items: center;
+
+            &[type=radio]+label {
+                height: 18px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .card-radio-details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .card-radio-content {
+            h6 {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 23.8px;
+                text-align: left;
+                margin-bottom: 4px;
+                color: $text_color;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20.8px;
+                text-align: left;
+                color: $black_color;
+                margin-bottom: 0px;
+            }
+        }
+
+        .tag {
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 15.6px;
+            text-align: center;
+            color: $white_color;
+            background-color: $primary_color;
+            padding: 8px 10px;
+            border-radius: 8px;
+        }
+    }
+
+    &.active {
+        background-color: #FFF6ED;
+        border-color: $primary_color;
+    }
+}
