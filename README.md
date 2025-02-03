@@ -1,4 +1,4 @@
-# Estimator Bob Front
+# Fance Mangement Front
 
 ## Getting Started
 
@@ -12,11 +12,11 @@ Before you begin, ensure you have `Node.js` and `npm` installed on your machine.
 
 1. Clone the repository:
 ```
-git clone https://github.com/techhiveRepo/estimator-bob-front.git
+git clone https://github.com/akshitrakholiya2301/fance_mangement.git
 ```
 2. Navigate to the project directory:
 ```
-cd estimator-bob-front
+cd fance_mangement
 ```
 3. Install dependencies:
 ```
